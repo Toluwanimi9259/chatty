@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386379956329",
+    "project_id": "chatty-ead84",
+    "storage_bucket": "chatty-ead84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386379956329:android:3ccada39187e5e0278a2f8",
+        "android_client_info": {
+          "package_name": "com.themafia.apps.chatty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386379956329-magjigo5unq17rr0as97c27pjrcjg3g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvjnH8aClnNquIOpShoOBuT4XTNi7CxVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386379956329-magjigo5unq17rr0as97c27pjrcjg3g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
