@@ -75,7 +75,7 @@ public class SignUpActivity extends AppCompatActivity {
         mAuth.createUserWithEmailAndPassword(email , password).addOnCompleteListener(task -> {
             if (task.isSuccessful()){
 
-                Toast.makeText(this, "A Problem Has Occurred", Toast.LENGTH_SHORT).show();
+
                 mReference.child("Users").child(mAuth.getUid()).child("userName").setValue(username);
 
                 if (imageControl){
@@ -97,10 +97,12 @@ public class SignUpActivity extends AppCompatActivity {
                     });
 
                 }else{
+//                    Toast.makeText(this, "A Problem Has Occurred", Toast.LENGTH_SHORT).show();
                     mReference.child("Users").child(mAuth.getUid()).child("image").setValue("null");
                 }
 
-                startActivity(new Intent(SignUpActivity.this , MainActivity.class).putExtra("Username" , username));
+                startActivity(new Intent(SignUpActivity.this , MainActivity.class));
+//                .putExtra("Username" , username)
                 finish();
 
             }else {

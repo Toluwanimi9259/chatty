@@ -6,9 +6,10 @@
         <entry key="..\:/Projects/Chatty/app/src/main/res/drawable/account.xml" value="0.1275" />
         <entry key="..\:/Projects/Chatty/app/src/main/res/layout/activity_forget_password.xml" value="0.22447916666666667" />
         <entry key="..\:/Projects/Chatty/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
-        <entry key="..\:/Projects/Chatty/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Projects/Chatty/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Projects/Chatty/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Projects/Chatty/app/src/main/res/layout/activity_sign_up.xml" value="0.22447916666666667" />
+        <entry key="..\:/Projects/Chatty/app/src/main/res/layout/rv_item.xml" value="0.2234375" />
         <entry key="..\:/Projects/Chatty/app/src/main/res/menu/chat_menu.xml" value="0.22447916666666667" />
       </map>
     </option>

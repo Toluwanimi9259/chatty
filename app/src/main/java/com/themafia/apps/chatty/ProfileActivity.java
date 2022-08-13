@@ -42,6 +42,7 @@ public class ProfileActivity extends AppCompatActivity {
     boolean imageControl = false;
 
     Uri imageUri;
+    String imageUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +97,7 @@ public class ProfileActivity extends AppCompatActivity {
                     });
 
         }else{
-            mReference.child("Users").child(mAuth.getUid()).child("image").setValue("null");
+            mReference.child("Users").child(mAuth.getUid()).child("image").setValue(imageUrl);
         }
 
         startActivity(new Intent(ProfileActivity.this , MainActivity.class).putExtra("Username" , userName));
@@ -110,7 +111,7 @@ public class ProfileActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 String userName = snapshot.child("userName").getValue().toString();
-                String imageUrl = snapshot.child("image").getValue().toString();
+                imageUrl = snapshot.child("image").getValue().toString();
                 updateUsername.setText(userName);
                 if (imageUrl.equals("null")){
                     updateProfilePic.setImageResource(R.drawable.account);
