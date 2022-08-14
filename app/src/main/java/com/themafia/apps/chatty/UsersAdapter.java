@@ -71,7 +71,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
                     Picasso.get().load(imageURL).into(holder.dp);
                 }
 
-                holder.mCardView.setOnClickListener(v -> mContext.startActivity(new Intent(mContext , ChatActivity.class).putExtra("UserName" , username).putExtra("OtherName",otherName)));
+                holder.mCardView.setOnClickListener(v -> mContext.startActivity(new Intent(mContext , ChatActivity.class).putExtra("Username" , username).putExtra("OtherName",otherName)));
 
             }
 
