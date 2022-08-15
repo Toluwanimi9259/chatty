@@ -55,19 +55,19 @@ public class MainActivity extends AppCompatActivity {
         userList = new ArrayList<>();
 
 
-        mReference.child("Users").child(mUser.getUid()).child("image").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                imageUrl = snapshot.getValue().toString();
-                Toast.makeText(MainActivity.this, "Iamge URL "+ imageUrl, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        mReference.child("Users").child(mUser.getUid()).child("image").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//
+//                imageUrl = snapshot.getValue().toString();
+//                Toast.makeText(MainActivity.this, "Iamge URL "+ imageUrl, Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
 
         mReference.child("Users").child(mUser.getUid()).child("userName").addValueEventListener(new ValueEventListener() {
             @Override

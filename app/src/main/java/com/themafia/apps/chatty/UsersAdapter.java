@@ -56,9 +56,6 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
                 String otherName = snapshot.child("userName").getValue().toString();
                 String imageURL = snapshot.child("image").getValue().toString();
 
-
-
-
                 holder.userTextView.setText(otherName);
 
                 if (imageURL.equals("null"))
@@ -71,7 +68,12 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
                     Picasso.get().load(imageURL).into(holder.dp);
                 }
 
-                holder.mCardView.setOnClickListener(v -> mContext.startActivity(new Intent(mContext , ChatActivity.class).putExtra("Username" , username).putExtra("OtherName",otherName)));
+                holder.mCardView.setOnClickListener(v -> {
+                    Intent intent = new Intent(mContext,ChatActivity.class);
+                    intent.putExtra("Username",username);
+                    intent.putExtra("OtherName",otherName);
+                    mContext.startActivity(intent);
+                });
 
             }
 
